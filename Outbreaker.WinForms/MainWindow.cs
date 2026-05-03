@@ -394,14 +394,14 @@ public partial class MainWindow : Form
         Text += $" - Update v{version.Major}.{version.Minor}.{version.Build} available!";
 
 #if !DEBUG
-        using UpdateNotifPopup nup = new(CurrentVersion, version, Config.TopMost);
+        /*using UpdateNotifPopup nup = new(CurrentVersion, version);
         if (nup.ShowDialog() == DialogResult.OK)
         {
             Process.Start(new ProcessStartInfo("https://github.com/LegoFigure11/Outbreaker/releases/")
             {
                 UseShellExecute = true
             });
-        }
+        }*/
 #endif
     }
 
