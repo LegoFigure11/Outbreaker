@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Outbreaker.Core/Outbreaker.Core.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="Outbreaker.WinForms/Outbreaker.WinForms.csproj">
+    <BuildDependency Project="Outbreaker.Core/Outbreaker.Core.csproj" />
+    <Platform Project="x64" />
+  </Project>
+</Solution>
